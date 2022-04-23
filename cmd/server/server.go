@@ -26,6 +26,8 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		routes.RandomDisconnect(c, r)
 	case "/receive-whisper":
 		routes.ReceiveWhisper(c, r)
+	case "/moderator-actions-user-banned":
+		routes.ModeratorActionsUserBanned(c, r)
 	default:
 		routes.Default(c, r)
 	}
