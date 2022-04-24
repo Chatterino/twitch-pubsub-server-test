@@ -20,6 +20,16 @@ func handleListen(ctx context.Context, c *websocket.Conn, r *http.Request, msg M
 	write(ctx, c, r, &response)
 }
 
+func handleListenBadAuth(ctx context.Context, c *websocket.Conn, r *http.Request, msg Message) {
+	response := Response{
+		Type:  "RESPONSE",
+		Nonce: msg.Nonce,
+		Error: "ERR_BADAUTH",
+	}
+
+	write(ctx, c, r, &response)
+}
+
 func defaultHandler(ctx context.Context, c *websocket.Conn, r *http.Request) bool {
 	_, data, err := c.Read(ctx)
 	if err != nil {

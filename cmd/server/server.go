@@ -28,6 +28,8 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		routes.ReceiveWhisper(c, r)
 	case "/moderator-actions-user-banned":
 		routes.ModeratorActionsUserBanned(c, r)
+	case "/authentication-required":
+		routes.AuthenticationRequired(c, r)
 	default:
 		routes.Default(c, r)
 	}
