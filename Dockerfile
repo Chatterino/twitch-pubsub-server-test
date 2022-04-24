@@ -1,11 +1,10 @@
 FROM golang:1.18 AS build
 ADD . /src
-RUN cd /src/cmd/server && GOOS=linux GOARCH=amd64 go build -tags netgo -ldflags '-extldflags "-static"'
+RUN cd /src/cmd/server && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 
-FROM alpine:latest
+FROM golang:1.18
 WORKDIR /app
 COPY --from=build /src/cmd/server/server /app/
 COPY --from=build /src/cmd/server/server.crt /app/
 COPY --from=build /src/cmd/server/server.key /app/
-RUN apk add --no-cache ca-certificates
-CMD ["./server"]
+CMD ["./server", "127.0.0.1:9050"]

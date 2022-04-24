@@ -28,6 +28,7 @@ jobs:
       - name: Get dependencies
         run: |
           go get -v -t -d ./...
+          docker version
 
       - name: Build
         run: go build -ldflags="-s -w" -v
