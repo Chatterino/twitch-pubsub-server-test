@@ -14,7 +14,7 @@ type server struct {
 func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	c, err := websocket.Accept(w, r, nil)
 	if err != nil {
-		log.Printf("%v", err)
+		log.Println("Error upgrading websocket connection:", err)
 		return
 	}
 	defer c.Close(websocket.StatusInternalError, "the sky is falling")
