@@ -66,14 +66,14 @@ func defaultHandler(ctx context.Context, c *websocket.Conn, r *http.Request) boo
 func handlePing(ctx context.Context, c *websocket.Conn, r *http.Request) {
 	err := c.Write(ctx, websocket.MessageText, pongPayload)
 	if err != nil {
-		panic(err)
+		log.Println("Error in write:", err)
 	}
 }
 
 func write(ctx context.Context, c *websocket.Conn, r *http.Request, msg interface{}) {
 	bytes, err := json.Marshal(msg)
 	if err != nil {
-		panic(err)
+		log.Println("Error in write:", err)
 	}
 
 	err = c.Write(ctx, websocket.MessageText, bytes)
