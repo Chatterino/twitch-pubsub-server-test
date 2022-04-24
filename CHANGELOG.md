@@ -4,6 +4,7 @@
 
  - Update docker build dependencies.
  - Add certificate and private key to docker image.
+ - Only build for Ubuntu
 
 ## v1.0.1
 
