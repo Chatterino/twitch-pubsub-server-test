@@ -13,6 +13,8 @@ on:
 
   # Run tests for any PRs.
   pull_request:
+    branches:
+      - master
 
 env:
   REGISTRY: ghcr.io
@@ -43,7 +45,6 @@ jobs:
       packages: write
 
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
 
     steps:
       - uses: actions/checkout@v3
