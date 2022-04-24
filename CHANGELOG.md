@@ -1,7 +1,15 @@
 # Changelog
 
-## v1.0.0
+## v1.0.2
 
+ - Update docker build dependencies.
+ - Add certificate and private key to docker image.
+
+## v1.0.1
+
+ - Fix docker build not publishing on tags.
+
+## v1.0.0
  - New route `/dont-respond-to-ping`  
    Doesn't respond to pings.
  - New route `/disconnect-client-after-1s`  

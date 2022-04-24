@@ -5,5 +5,7 @@ RUN cd /src/cmd/server && GOOS=linux GOARCH=amd64 go build -tags netgo -ldflags 
 FROM alpine:latest
 WORKDIR /app
 COPY --from=build /src/cmd/server/server /app/
+COPY --from=build /src/cmd/server/server.crt /app/
+COPY --from=build /src/cmd/server/server.key /app/
 RUN apk add --no-cache ca-certificates
 CMD ["./server"]
