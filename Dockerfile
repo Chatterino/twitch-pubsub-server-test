@@ -2,7 +2,7 @@ FROM golang:1.18 AS build
 ADD . /src
 RUN cd /src/cmd/server && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 
-FROM golang:1.18
+FROM alpine:latest
 WORKDIR /app
 COPY --from=build /src/cmd/server/server /app/
 COPY --from=build /src/cmd/server/server.crt /app/
