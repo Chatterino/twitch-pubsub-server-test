@@ -30,6 +30,8 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		routes.ModeratorActionsUserBanned(c, r)
 	case "/authentication-required":
 		routes.AuthenticationRequired(c, r)
+	case "/automod-held":
+		routes.AutomodHeld(c, r)
 	default:
 		routes.Default(c, r)
 	}
