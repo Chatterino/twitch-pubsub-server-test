@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.3
+
+ - Update docker build dependencies.
+ - New route `/automod-held`  
+   Sends an "automod held" message shorly after client connected.
+
 ## v1.0.2
 
  - Update docker build dependencies.
