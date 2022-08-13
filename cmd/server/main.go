@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"errors"
+	"fmt"
 	"log"
 	"net"
 	"net/http"
@@ -55,6 +56,8 @@ func run() error {
 
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
 	defer cancel()
+
+	fmt.Println("aaaaaaaaa")
 
 	return s.Shutdown(ctx)
 }
