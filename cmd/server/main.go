@@ -56,5 +56,7 @@ func run() error {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
 	defer cancel()
 
+	log.Println("teeeeeeeest")
+
 	return s.Shutdown(ctx)
 }
