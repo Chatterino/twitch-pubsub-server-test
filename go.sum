@@ -1,5 +1,5 @@
-git.kotmisia.pl/Mm2PL/examples v0.0.0-20220423130308-f7fe84b20be7 h1:xWZSMYnJRFlWEg5IWjIwCLh3H6s9dut4rNq5PMBoxZ0=
-git.kotmisia.pl/Mm2PL/examples v0.0.0-20220423130308-f7fe84b20be7/go.mod h1:eyZjuAOMmFaZfyD3d+L5ghIGDVu505bpSvm1xVoapn8=
+git.kotmisia.pl/Mm2PL/examples v1.0.0 h1:O/FUxiR7shJWTWhHBkEHFYvO/3CJfh9L6c90t6sGzAI=
+git.kotmisia.pl/Mm2PL/examples v1.0.0/go.mod h1:eyZjuAOMmFaZfyD3d+L5ghIGDVu505bpSvm1xVoapn8=
 github.com/BurntSushi/toml v1.2.0 h1:Rt8g24XnyGTyglgET/PRUNlrUeu9F5L+7FilkXfZgs0=
 github.com/BurntSushi/toml v1.2.0/go.mod h1:CxXYINrC8qIiEnFrOxCa7Jy5BFHlXnUU2pbicEuybxQ=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

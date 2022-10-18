@@ -3,7 +3,7 @@ module github.com/Chatterino/twitch-pubsub-server-test
 go 1.18
 
 require (
-	git.kotmisia.pl/Mm2PL/examples v0.0.0-20220423130308-f7fe84b20be7
+	git.kotmisia.pl/Mm2PL/examples v1.0.0
 	honnef.co/go/tools v0.3.3
 	nhooyr.io/websocket v1.8.7
 )
