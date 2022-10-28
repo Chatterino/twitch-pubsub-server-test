@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes"
+	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates"
 	"nhooyr.io/websocket"
 )
 
@@ -32,6 +33,8 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		routes.AuthenticationRequired(c, r)
 	case "/automod-held":
 		routes.AutomodHeld(c, r)
+	case "/liveupdates/sub":
+		liveupdates.BasicSubUnsub(c, r)
 	default:
 		routes.Default(c, r)
 	}
