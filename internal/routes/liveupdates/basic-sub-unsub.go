@@ -13,7 +13,8 @@ import (
 )
 
 func BasicSubUnsub(c *websocket.Conn, r *http.Request) {
-	ctx, _ := context.WithTimeout(r.Context(), 1*time.Second)
+	ctx, cancel := context.WithTimeout(r.Context(), 1*time.Second)
+	defer cancel()
 
 	subs := make(map[string]int32)
 
