@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v1.0.4
+
  - Add test for generic pubsub. (#27)
 
 ## v1.0.3
