@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+ - Add test for generic pubsub. (#27)
+
 ## v1.0.3
 
  - Update docker build dependencies.
