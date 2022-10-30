@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+ - Add 7TV EventApi tests. (#30)
+
 ## v1.0.4
 
  - Add test for generic pubsub. (#27)
