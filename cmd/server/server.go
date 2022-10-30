@@ -6,6 +6,7 @@ import (
 
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes"
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates"
+	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates/seventv"
 	"nhooyr.io/websocket"
 )
 
@@ -35,6 +36,10 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		routes.AutomodHeld(c, r)
 	case "/liveupdates/sub-unsub":
 		liveupdates.BasicSubUnsub(c, r)
+	case "/liveupdates/seventv/all-events":
+		seventv.AllEvents(c, r)
+	case "/liveupdates/seventv/no-heartbeat":
+		seventv.NoHeartbeat(c, r)
 	default:
 		routes.Default(c, r)
 	}
