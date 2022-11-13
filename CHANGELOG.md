@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v1.0.5
+
  - Add 7TV EventApi tests. (#30)
 
 ## v1.0.4
