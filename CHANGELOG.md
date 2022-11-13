@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+ - Add BTTV live emote update tests. (#33)
+
 ## v1.0.5
 
  - Add 7TV EventApi tests. (#30)

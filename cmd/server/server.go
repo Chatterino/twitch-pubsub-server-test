@@ -6,6 +6,7 @@ import (
 
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes"
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates"
+	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates/bttv"
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates/seventv"
 	"nhooyr.io/websocket"
 )
@@ -40,6 +41,8 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		seventv.AllEvents(c, r)
 	case "/liveupdates/seventv/no-heartbeat":
 		seventv.NoHeartbeat(c, r)
+	case "/liveupdates/bttv/all-events":
+		bttv.AllEvents(c, r)
 	default:
 		routes.Default(c, r)
 	}
