@@ -3,7 +3,7 @@ package bttv
 import "encoding/json"
 
 type MessageType interface {
-	json.RawMessage | JoinPayload | PartPayload
+	json.RawMessage | JoinPayload | PartPayload | BroadcastMePayload
 }
 
 type Message[D MessageType] struct {
@@ -17,4 +17,9 @@ type JoinPayload struct {
 
 type PartPayload struct {
 	Name string `json:"name"`
+}
+
+type BroadcastMePayload struct {
+	Name    string `json:"name"`
+	Channel string `json:"channel"`
 }
