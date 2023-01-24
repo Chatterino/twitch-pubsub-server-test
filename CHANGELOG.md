@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v1.0.6
+
  - Add BTTV live emote update tests. (#33, #34)
 
 ## v1.0.5
