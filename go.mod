@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	git.kotmisia.pl/Mm2PL/examples v1.0.0
-	honnef.co/go/tools v0.4.1
+	honnef.co/go/tools v0.4.2
 	nhooyr.io/websocket v1.8.7
 )
 
