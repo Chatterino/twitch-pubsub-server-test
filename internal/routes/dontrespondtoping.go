@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 func DontRespondToPing(c *websocket.Conn, r *http.Request) {

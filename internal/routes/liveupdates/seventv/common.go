@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 func ConvertMessage[D MessageType](c *Message[json.RawMessage]) (Message[D], error) {

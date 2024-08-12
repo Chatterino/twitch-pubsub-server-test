@@ -8,7 +8,7 @@ import (
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates"
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates/bttv"
 	"github.com/Chatterino/twitch-pubsub-server-test/internal/routes/liveupdates/seventv"
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 type server struct {

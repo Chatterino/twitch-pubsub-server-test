@@ -8,7 +8,7 @@ import (
 	"log"
 	"net/http"
 
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 func authenticatedHandler(ctx context.Context, c *websocket.Conn, r *http.Request) bool {

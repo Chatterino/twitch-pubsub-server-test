@@ -7,7 +7,7 @@ import (
 	"log"
 	"net/http"
 
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 func handleListen(ctx context.Context, c *websocket.Conn, r *http.Request, msg Message) {
