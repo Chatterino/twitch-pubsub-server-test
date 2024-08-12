@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 func ReceiveWhisper(c *websocket.Conn, r *http.Request) {

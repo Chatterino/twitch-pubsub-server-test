@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 func Default(c *websocket.Conn, r *http.Request) {

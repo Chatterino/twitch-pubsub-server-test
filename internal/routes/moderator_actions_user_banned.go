@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"git.kotmisia.pl/Mm2PL/examples"
-	"nhooyr.io/websocket"
+	"github.com/coder/websocket"
 )
 
 func ModeratorActionsUserBanned(c *websocket.Conn, r *http.Request) {

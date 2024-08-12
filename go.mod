@@ -4,8 +4,8 @@ go 1.20
 
 require (
 	git.kotmisia.pl/Mm2PL/examples v1.0.0
+	github.com/coder/websocket v1.8.12
 	honnef.co/go/tools v0.4.7
-	nhooyr.io/websocket v1.8.11
 )
 
 require (
