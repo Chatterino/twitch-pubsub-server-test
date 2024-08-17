@@ -1,4 +1,4 @@
-FROM golang:1.20 AS build
+FROM golang:1 AS build
 ADD . /src
 RUN cd /src/cmd/server && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build
 
