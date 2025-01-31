@@ -26,4 +26,4 @@ jobs:
           goarch: ${{ matrix.goarch }}
           project_path: "./cmd/server"
           binary_name: "server"
-          extra_files: LICENSE README.md
+          extra_files: LICENSE README.md cmd/server/server.crt cmd/server/server.key

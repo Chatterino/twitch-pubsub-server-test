@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Include `server.crt` and `server.key` in releases. (#113)
+
 ## v1.0.7
 
 - Only dev changes, like bumping go version etc
