@@ -1,8 +1,6 @@
 module github.com/Chatterino/twitch-pubsub-server-test
 
-go 1.22.1
-
-toolchain go1.23.0
+go 1.23
 
 require (
 	git.kotmisia.pl/Mm2PL/examples v1.0.0
