@@ -5,7 +5,7 @@ go 1.23.0
 require (
 	git.kotmisia.pl/Mm2PL/examples v1.0.0
 	github.com/coder/websocket v1.8.12
-	honnef.co/go/tools v0.6.0
+	honnef.co/go/tools v0.6.1
 )
 
 require (
