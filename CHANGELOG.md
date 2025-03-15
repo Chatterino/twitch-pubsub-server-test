@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add `/HEADER <name>` command to the `/echo` handler. (#121)
+
 ## v1.0.9
 
 - Add optional TCP listener (second argument). (#120)
