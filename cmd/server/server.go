@@ -35,6 +35,8 @@ func (s server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		routes.AuthenticationRequired(c, r)
 	case "/automod-held":
 		routes.AutomodHeld(c, r)
+	case "/echo":
+		routes.Echo(c, r)
 	case "/liveupdates/sub-unsub":
 		liveupdates.BasicSubUnsub(c, r)
 	case "/liveupdates/seventv/all-events":
