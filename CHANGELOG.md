@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v1.0.9
+
 - Add optional TCP listener (second argument). (#120)
 - Add `/echo` handler. (#120)
 
