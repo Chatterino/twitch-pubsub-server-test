@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Add optional TCP listener (second argument). (#120)
+- Add `/echo` handler. (#120)
+
 ## v1.0.8
 
 - Include `server.crt` and `server.key` in releases. (#113)
