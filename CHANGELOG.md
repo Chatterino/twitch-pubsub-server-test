@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v1.0.10
+
 - Add `/HEADER <name>` command to the `/echo` handler. (#121)
 
 ## v1.0.9
