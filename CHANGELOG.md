@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+## v1.0.11
+
+- Add default TCP listener param to dockerfile. (#124)
+
 ## v1.0.10
 
 - Add `/HEADER <name>` command to the `/echo` handler. (#121)
