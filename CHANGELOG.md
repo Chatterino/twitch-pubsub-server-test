@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Add `/URL` command to the `/echo` handler. (#126)
+
 ## v1.0.11
 
 - Add default TCP listener param to dockerfile. (#124)
