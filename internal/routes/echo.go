@@ -26,6 +26,8 @@ func Echo(c *websocket.Conn, r *http.Request) {
 		}
 		if strings.HasPrefix(strData, "/HEADER ") {
 			data = []byte(r.Header.Get(strings.TrimPrefix(strData, "/HEADER ")))
+		} else if strData == "/URL" {
+			data = []byte(r.URL.String())
 		}
 
 		err = c.Write(r.Context(), ty, data)
