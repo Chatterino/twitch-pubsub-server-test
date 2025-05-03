@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v1.0.12
+
 - Add `/URL` command to the `/echo` handler. (#126)
 
 ## v1.0.11
