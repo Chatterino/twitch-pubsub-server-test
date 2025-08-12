@@ -23,7 +23,7 @@ jobs:
         with:
           go-version: ${{ matrix.go }}
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Get dependencies
         run: |
