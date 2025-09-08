@@ -6,7 +6,7 @@ toolchain go1.24.1
 
 require (
 	git.kotmisia.pl/Mm2PL/examples v1.0.0
-	github.com/coder/websocket v1.8.13
+	github.com/coder/websocket v1.8.14
 	honnef.co/go/tools v0.6.1
 )
 
