@@ -45,13 +45,13 @@ func AllEvents(c *websocket.Conn, r *http.Request) {
 			}
 			switch payload.Data.Type {
 			case "emote_set.update":
-				formatted := []byte(fmt.Sprintf(modifyEmoteSetFormatString, payload.Data.Condition["object_id"]))
+				formatted := fmt.Appendf(nil, modifyEmoteSetFormatString, payload.Data.Condition["object_id"])
 				if err := c.Write(ctx, websocket.MessageText, formatted); err != nil {
 					log.Println("Failed to send", err)
 					break
 				}
 			case "user.update":
-				formatted := []byte(fmt.Sprintf(updateUserConnection, payload.Data.Condition["object_id"], emoteSetOldId, emoteSetNewId))
+				formatted := fmt.Appendf(nil, updateUserConnection, payload.Data.Condition["object_id"], emoteSetOldId, emoteSetNewId)
 				if err := c.Write(ctx, websocket.MessageText, formatted); err != nil {
 					log.Println("Failed to send", err)
 					break

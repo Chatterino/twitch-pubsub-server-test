@@ -29,7 +29,7 @@ func AllEvents(c *websocket.Conn, r *http.Request) {
 			return true
 		}
 		sentBroadcastMe = true
-		formatted := []byte(fmt.Sprintf(updateEmoteFormatString, channel))
+		formatted := fmt.Appendf(nil, updateEmoteFormatString, channel)
 		if err := c.Write(ctx, websocket.MessageText, formatted); err != nil {
 			log.Println("Failed to send", err)
 			return false
@@ -50,7 +50,7 @@ func AllEvents(c *websocket.Conn, r *http.Request) {
 				log.Println("Bad message", err)
 				break
 			}
-			formatted := []byte(fmt.Sprintf(addEmoteFormatString, payload.Data.Name))
+			formatted := fmt.Appendf(nil, addEmoteFormatString, payload.Data.Name)
 			if err := c.Write(ctx, websocket.MessageText, formatted); err != nil {
 				log.Println("Failed to send", err)
 				break
@@ -58,7 +58,7 @@ func AllEvents(c *websocket.Conn, r *http.Request) {
 			if !trySendUpdate(payload.Data.Name) {
 				break
 			}
-			formatted = []byte(fmt.Sprintf(removeEmoteFormstString, payload.Data.Name))
+			formatted = fmt.Appendf(nil, removeEmoteFormstString, payload.Data.Name)
 			if err := c.Write(ctx, websocket.MessageText, formatted); err != nil {
 				log.Println("Failed to send", err)
 				// break
