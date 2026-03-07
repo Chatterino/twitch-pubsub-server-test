@@ -70,7 +70,7 @@ func handlePing(ctx context.Context, c *websocket.Conn, r *http.Request) {
 	}
 }
 
-func write(ctx context.Context, c *websocket.Conn, r *http.Request, msg interface{}) {
+func write(ctx context.Context, c *websocket.Conn, r *http.Request, msg any) {
 	bytes, err := json.Marshal(msg)
 	if err != nil {
 		log.Println("Error in write:", err)

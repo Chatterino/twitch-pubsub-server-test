@@ -1,9 +1,9 @@
 package routes
 
 type Message struct {
-	Type  string                 `json:"type"`
-	Nonce string                 `json:"nonce"`
-	Data  map[string]interface{} `json:"data"`
+	Type  string         `json:"type"`
+	Nonce string         `json:"nonce"`
+	Data  map[string]any `json:"data"`
 }
 
 type Response struct {

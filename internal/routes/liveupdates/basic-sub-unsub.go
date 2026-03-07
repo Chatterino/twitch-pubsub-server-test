@@ -43,12 +43,12 @@ func BasicSubUnsub(c *websocket.Conn, r *http.Request) {
 		case "sub":
 			if _, ok := subs[msg.Condition]; !ok {
 				subs[msg.Condition] = msg.Type
-				c.Write(ctx, websocket.MessageText, []byte(fmt.Sprintf("ack-sub-%d-%s", msg.Type, msg.Condition)))
+				c.Write(ctx, websocket.MessageText, fmt.Appendf(nil, "ack-sub-%d-%s", msg.Type, msg.Condition))
 			}
 		case "unsub":
 			if v, ok := subs[msg.Condition]; ok && msg.Type == v {
 				delete(subs, msg.Condition)
-				c.Write(ctx, websocket.MessageText, []byte(fmt.Sprintf("ack-unsub-%d-%s", msg.Type, msg.Condition)))
+				c.Write(ctx, websocket.MessageText, fmt.Appendf(nil, "ack-unsub-%d-%s", msg.Type, msg.Condition))
 			}
 		default:
 			log.Println("Unhandled message:", msg)
