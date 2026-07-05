@@ -2,8 +2,8 @@ git.kotmisia.pl/Mm2PL/examples v1.0.0 h1:O/FUxiR7shJWTWhHBkEHFYvO/3CJfh9L6c90t6s
 git.kotmisia.pl/Mm2PL/examples v1.0.0/go.mod h1:eyZjuAOMmFaZfyD3d+L5ghIGDVu505bpSvm1xVoapn8=
 github.com/BurntSushi/toml v1.6.0 h1:dRaEfpa2VI55EwlIW72hMRHdWouJeRF7TPYhI+AUQjk=
 github.com/BurntSushi/toml v1.6.0/go.mod h1:ukJfTF/6rtPPRCnwkur4qwRxa8vTRFBF0uk2lLoLwho=
-github.com/coder/websocket v1.8.14 h1:9L0p0iKiNOibykf283eHkKUHHrpG7f65OE3BhhO7v9g=
-github.com/coder/websocket v1.8.14/go.mod h1:NX3SzP+inril6yawo5CQXx8+fk145lPDC6pumgx0mVg=
+github.com/coder/websocket v1.8.15 h1:6B2JPeOGlpff2Uz6vOEH1Vzpi0iUz20A+lPVhPHtNUA=
+github.com/coder/websocket v1.8.15/go.mod h1:NX3SzP+inril6yawo5CQXx8+fk145lPDC6pumgx0mVg=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
 golang.org/x/exp/typeparams v0.0.0-20260218203240-3dfff04db8fa h1:6Wi43P0isP8Nl8D4qJmA3VC4FswVH0RJkr5cauo67SQ=
