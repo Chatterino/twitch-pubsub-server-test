@@ -9,6 +9,8 @@ on:
       - "v*"
   pull_request:
 
+permissions: {}
+
 jobs:
   build:
     runs-on: ${{ matrix.os }}
